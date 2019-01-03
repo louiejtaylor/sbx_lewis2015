@@ -3,7 +3,7 @@ Sunbeam extension to reproduce key results from Lewis et al 2015 (PMID: 26468751
 
 ## Background
 
-This report uses the [Sunbeam pipeline](https://github.com/sunbeam-labs/sunbeam) to reproduce findings from the 2015 Lewis *et al.* paper entitled "Inflammation, Antibiotics, and Diet as Environmental Stressors of the Gut Microbiome in Pediatric Crohn's Disease" [(PMID: 26468751)](https://www.ncbi.nlm.nih.gov/pubmed/26468751). A key finding of this paper was that individuals with Crohn's disease form two distinct clusters by Multidimensional Scaling (MDS)--the dysbiotic cluster tended to have a high human DNA fraction. Here, we test whether we can reproduce this finding using the originial data submitted to the SRA, and compare three different read-based classification methods available in Sunbeam or as Sunbeam extensions: Kaiju, Kraken, and MetaPhlAn2.
+This report uses the [Sunbeam pipeline](https://github.com/sunbeam-labs/sunbeam) to reproduce results from the 2015 Lewis *et al.* paper entitled "Inflammation, Antibiotics, and Diet as Environmental Stressors of the Gut Microbiome in Pediatric Crohn's Disease" [(PMID: 26468751)](https://www.ncbi.nlm.nih.gov/pubmed/26468751). A key finding of this study was that individuals with Crohn's disease form two distinct clusters by Multidimensional Scaling (MDS)--the dysbiotic cluster tended to have a high human DNA fraction. Here, we test whether we can reproduce this observation using the originial data submitted to the SRA, and compare three different read-based classification methods available in Sunbeam or as Sunbeam extensions: Kaiju, Kraken, and MetaPhlAn2.
 
 ## Installing
 
@@ -29,4 +29,6 @@ Since the Lewis 2015 data is available through NCBI SRA, all you need to do is p
 And then run Sunbeam, specifying `lewis_report` as the target rule:
 
     sunbeam run --configfile Lewis2015 --cores 20 lewis_report
+    
+The report will be located in the `reports` directory in your Sunbeam output folder (usually named `sunbeam_output`).
     
