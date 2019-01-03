@@ -1,0 +1,4 @@
+r-tidyverse
+r-rmarkdown
+r-viridis
+pandocr-tidyverse

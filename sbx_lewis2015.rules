@@ -1,0 +1,9 @@
+rule all_report:
+    input:
+        kaiju = str(CLASSIFY_FP/'kaiju'/'all_samples.tsv'),
+        kraken = str(CLASSIFY_FP/'kraken'/'all_samples.tsv'),
+        metaphlan = str(CLASSIFY_FP/'metaphlan'/'taxonomic_assignments.tsv')
+    output:
+        str(Cfg['all']['output_fp']/'reports/Lewis2015_Report.html')
+    script:
+        sunbeam_dir + '/extensions/sbx_lewis2015/final_report.Rmd'
