@@ -1,4 +1,6 @@
 r-tidyverse
 r-rmarkdown
 r-viridis
-pandocr-tidyverse
+r-vegan
+r-mass
+pandoc
