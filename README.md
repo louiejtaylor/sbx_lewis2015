@@ -28,7 +28,7 @@ Since the Lewis 2015 data is available through NCBI SRA, all you need to do is p
     
 And then run Sunbeam, specifying `lewis_report` as the target rule:
 
-    sunbeam run --configfile sunbeam_config.yml --cores 20 lewis_report
+    sunbeam run --configfile Lewis2015/sunbeam_config.yml --cores 20 lewis_report
     
 The report will be located in the `reports` directory in your Sunbeam output folder (usually named `sunbeam_output`).
     
